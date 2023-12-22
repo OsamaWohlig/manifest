@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: aws-eks
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: aws-eks
+  template:
+    metadata:
+      labels:
+        app: aws-eks
+    spec:
+      containers:
+        - name: eks-registry
+          image: 187386332334.dkr.ecr.ap-south-1.amazonaws.com/new:b94074cb46a59978e70718fef17f945dd748965a
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8080
