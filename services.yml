@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: aws-eks-service
+  name: nginx-service
+  namespace: namespace-1
 spec:
   selector:
-    app: aws-eks
+    app: nginx
   ports:
     - protocol: TCP
       port: 80
-      targetPort: 8080
-  loadBalancerIP: 192.168.49.2
-  type: LoadBalancer
+      targetPort: 80
+  type: ClusterIP
