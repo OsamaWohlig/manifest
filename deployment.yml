@@ -1,20 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: aws-eks
+  name: nginx-deployment
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: aws-eks
+      app: nginx
   template:
     metadata:
       labels:
-        app: aws-eks
+        app: nginx
     spec:
       containers:
-        - name: eks-registry
-          image: 427735392661.dkr.ecr.ap-south-1.amazonaws.com/images:8250b5f8b351c1ae5189a9f96c2ce3e76d8a0840
-          imagePullPolicy: Always
-          ports:
-            - containerPort: 8080
+      - name: nginx
+        image: nginx:latest
+        ports:
+        - containerPort: 80
