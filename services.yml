@@ -8,6 +8,5 @@ spec:
   ports:
     - protocol: TCP
       port: 80
-      targetPort: 80
-  loadBalancerIP: 192.168.49.2    
-  type: LoadBalancer
+      targetPort: 80  
+  type: NordPort
