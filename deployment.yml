@@ -16,4 +16,4 @@ spec:
         - name: test
           image: 427735392661.dkr.ecr.ap-south-1.amazonaws.com/images:36e4018a9c3bf4fb2209d6220ab6f86e679becd8
           ports:
-            - containerPort: 8080
+            - containerPort: 3000
