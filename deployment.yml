@@ -17,3 +17,7 @@ spec:
           image: osamapatel/frontend-test
           ports:
             - containerPort: 3000
+        - name: test2
+          image: osamapatel/test-image
+          ports:
+            - containerPort: 3000
