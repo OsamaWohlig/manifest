@@ -17,7 +17,3 @@ spec:
           image: osamapatel/spa-frontend
           ports:
             - containerPort: 3000
-        - name: test2
-          image: osamapatel/test-image
-          ports:
-            - containerPort: 3000
