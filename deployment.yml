@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: test
-          image: osamapatel/frontend-test
+          image: osamapatel/spa-frontend
           ports:
             - containerPort: 3000
         - name: test2
