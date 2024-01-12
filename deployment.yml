@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: test
-          image: javedpatel007/react-app
+          image: osamapatel/spa-frontend
           ports:
             - containerPort: 3000
